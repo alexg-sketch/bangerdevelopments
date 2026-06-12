@@ -2,16 +2,122 @@
 <html>
 <head>
     <title>Banger Developments</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .card {
+            max-width: 850px;
+            background: #1e293b;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 0 30px rgba(0,0,0,0.4);
+        }
+
+        h1 {
+            font-size: 52px;
+            margin-bottom: 10px;
+            color: #facc15;
+        }
+
+        h2 {
+            font-size: 26px;
+            font-weight: normal;
+            color: #cbd5e1;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #e2e8f0;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin: 30px 0;
+        }
+
+        .service {
+            background: #334155;
+            padding: 15px 20px;
+            border-radius: 12px;
+            font-size: 16px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 15px 25px;
+            background: #facc15;
+            color: #0f172a;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #fde047;
+        }
+
+        .footer {
+            margin-top: 35px;
+            font-size: 14px;
+            color: #94a3b8;
+        }
+    </style>
 </head>
 <body>
-    <h1>Banger Developments</h1>
 
-    <p>Custom software and app development.</p>
+    <section class="hero">
+        <div class="card">
+            <h1>Banger Developments</h1>
+            <h2>Custom Software & App Development</h2>
 
-    <h2>Current Project</h2>
-    <p>Poker Home Game App (In Development)</p>
+            <p>
+                I build custom applications and software tools for individuals,
+                small businesses, and anyone with an idea they want turned into
+                a working product.
+            </p>
 
-    <h2>Contact</h2>
-    <p>Email: your-email-here</p>
+            <div class="services">
+                <div class="service">Desktop Applications</div>
+                <div class="service">Business Tools</div>
+                <div class="service">App Prototypes</div>
+                <div class="service">Automation Tools</div>
+                <div class="service">Custom Software</div>
+            </div>
+
+            <p>
+                Have an app idea or a repetitive task you want automated?
+                Reach out and tell me what you need built.
+            </p>
+
+            <a class="button" href="mailto:YOUR_EMAIL_HERE">
+                Contact Me
+            </a>
+
+            <div class="footer">
+                Current project: Poker Home Game App — in development
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
