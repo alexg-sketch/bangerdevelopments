@@ -3,35 +3,35 @@
 <head>
     <title>Banger Developments</title>
     <link rel="icon" type="image/png" href="protoLogo.png">
+
     <style>
         body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #0f172a, #1e293b);
-    color: white;
-}
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: white;
+        }
 
         .hero {
             min-height: 100vh;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
             padding: 60px;
+            box-sizing: border-box;
         }
 
-        .card {
-    width: 100%;
-}
         .logo {
-    width: 250px;
-    max-width: 80%;
-    margin-bottom: 20px;
-}
+            width: 250px;
+            max-width: 80%;
+            margin-bottom: 20px;
+        }
 
         h1 {
             font-size: 52px;
-            margin-bottom: 10px;
+            margin: 0 0 10px;
             color: #facc15;
         }
 
@@ -39,7 +39,7 @@
             font-size: 26px;
             font-weight: normal;
             color: #cbd5e1;
-            margin-bottom: 30px;
+            margin: 0 0 30px;
         }
 
         p {
@@ -48,12 +48,22 @@
             color: #e2e8f0;
         }
 
+        .info-card {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 18px;
+            margin: 20px auto;
+            max-width: 900px;
+            width: 100%;
+            box-shadow: 0 0 25px rgba(0,0,0,0.25);
+        }
+
         .services {
             display: flex;
             flex-wrap: wrap;
             gap: 15px;
             justify-content: center;
-            margin: 30px 0;
+            margin: 30px 0 0;
         }
 
         .service {
@@ -63,9 +73,15 @@
             font-size: 16px;
         }
 
+        h3 {
+            color: #facc15;
+            font-size: 28px;
+            margin-top: 0;
+        }
+
         .button {
             display: inline-block;
-            margin-top: 25px;
+            margin-top: 20px;
             padding: 15px 25px;
             background: #facc15;
             color: #0f172a;
@@ -78,67 +94,47 @@
             background: #fde047;
         }
 
-        .footer {
-            margin-top: 35px;
-            font-size: 14px;
-            color: #94a3b8;
-
-        .info-card {
-    background: #1e293b;
-    padding: 30px;
-    border-radius: 18px;
-    margin: 25px auto;
-    max-width: 900px;
-    box-shadow: 0 0 25px rgba(0,0,0,0.25);
-}
-
-        h3 {
-    color: #facc15;
-    font-size: 28px;
-    margin-top: 0;
-}
-
         .secondary {
-    margin-left: 12px;
-}
+            margin-left: 12px;
         }
     </style>
 </head>
+
 <body>
 
     <section class="hero">
-        <img src="logo.png" alt="Banger Developments Logo" class="logo">
+        <img src="protoLogo.png" alt="Banger Developments Logo" class="logo">
 
-<h1>Banger Developments</h1>
-<h2>Custom Software & App Development</h2>
+        <h1>Banger Developments</h1>
+        <h2>Custom Software & App Development</h2>
 
-<div class="info-card">
-    <p>
-        Hi! My name is Alex and I build custom applications and software tools for individuals,
-        small businesses, and anyone with an idea they want turned into
-        a working product.
-    </p>
+        <div class="info-card">
+            <p>
+                Hi! My name is Alex and I build custom applications and software tools for individuals,
+                small businesses, and anyone with an idea they want turned into
+                a working product.
+            </p>
 
-    <div class="services">
-        <div class="service">Desktop Applications</div>
-        <div class="service">Business Tools</div>
-        <div class="service">App Prototypes</div>
-        <div class="service">Automation Tools</div>
-        <div class="service">Custom Software</div>
-    </div>
-</div>
+            <div class="services">
+                <div class="service">Desktop Applications</div>
+                <div class="service">Business Tools</div>
+                <div class="service">App Prototypes</div>
+                <div class="service">Automation Tools</div>
+                <div class="service">Custom Software</div>
+            </div>
+        </div>
 
-<div class="info-card">
-    <h3>Have an idea?</h3>
+        <div class="info-card">
+            <h3>Have an idea?</h3>
 
-    <p>
-        Have an app idea or a repetitive task you want automated?
-        Reach out and tell me what you need built.
-    </p>
+            <p>
+                Have an app idea or a repetitive task you want automated?
+                Reach out and tell me what you need built.
+            </p>
 
-    <a class="button" href="mailto:YOUR_EMAIL_HERE">Contact Me</a>
-    <a class="button secondary" href="work.html">View Our Work</a>
-</div>
+            <a class="button" href="mailto:YOUR_EMAIL_HERE">Contact Me</a>
+            <a class="button secondary" href="work.html">View Our Work</a>
+        </div>
     </section>
 
 </body>
